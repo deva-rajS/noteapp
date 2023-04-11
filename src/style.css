@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch */
+
+html {
+  @apply font-sans;
+}
+
+.main {
+  @apply bg-[#202233];
+}
+.sub {
+}
+.notes {
+  @apply rounded-xl w-38 bg-slate-700 py-2;
+}
+.sub-head {
+  @apply text-white pl-4 pr-2  flex flex-wrap;
+}
+.sub-text {
+  @apply text-gray-400 pl-4 flex flex-wrap;
+}
+.sub-date {
+  @apply;
+}
