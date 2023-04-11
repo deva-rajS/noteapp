@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <div
+      class="h-screen w-full flex flex-wrap justify-center items-center bg-gradient-to-r from-gray-200 via-slate-500 to-gray-200"
+    >
+      <div class="main w-96 h-[95%] rounded-xl absolute relative">
+        <div>
+          <h2
+            class="text-white cursor-default text-2xl font-semibold absolute left-8 top-6"
+          >
+            Notes
+          </h2>
+        </div>
+        <div
+          class="w-5/6 bg-slate-700 flex flex-wrap inset-x-8 rounded-full absolute top-16 py-1"
+        >
+          <span class="text-white pl-4"
+            ><i class="fa-solid fa-bars-filter"></i
+          ></span>
+          <input
+            class="bg-slate-700 w-5/6 right-2 absolute outline-none text-white"
+            type="text"
+            placeholder="Search your notes"
+          />
+        </div>
+        <div
+          class="notepad grid grid-cols-2 gap-4 mx-8 mt-28 h-auto flex flex-wrap"
+        >
+          <div class="notes">
+            <div>
+              <h3
+                class="sub-head font-bold text-white pl-4 pr-2 flex flex-wrap"
+              >
+                course
+              </h3>
+            </div>
+            <div class="sub-text text-gray-400 pl-4 flex flex-wrap">
+              javascript
+            </div>
+            <div class="sub-date text-gray-400 pl-4">
+              <span class="day">Sat</span><span class="month">Mar</span
+              ><span class="year">2023</span>
+            </div>
+          </div>
+        </div>
+        <footer class="w-96 h-14 bg-slate-950 bottom-0 absolute rounded-xl">
+          <div
+            class="rounded-full h-11 w-11 bg-blue-700 absolute right-4 inset-y-1.5 flex flex-wrap items-center justify-center"
+          >
+            <span
+              class="btn-add cursor-default text-white text-4xl absolute pb-1.5"
+              >+</span
+            >
+          </div>
+        </footer>
+      </div>
+      <div
+        class="sub hidden w-96 h-[95%] bg-white rounded-xl absolute relative"
+      >
+        <div class="">
+          <i
+            class="text-slate-700 text-2xl ml-8 mt-6 fa-solid fa-circle-arrow-left back"
+          ></i>
+        </div>
+        <div
+          class="text-2xl cursor-default font-semibold absolute left-8 top-16"
+        >
+          Test Note
+        </div>
+        <div>
+          <input
+            class="w-5/6 ml-8 mt-12 pl-2 py-0.5 text-gray-700 bg-gray-200 rounded-md outline-none absolute"
+            type="text"
+            placeholder="Title"
+            id="title"
+          />
+        </div>
+        <textarea
+          class="ml-10 mt-20 pl-1 w-80 h-[60%] text-gray-700 outline-slate-200"
+          name="text"
+          id="textfield"
+          cols="30"
+          rows="10"
+          placeholder="Test note here"
+        ></textarea>
+        <button
+          class="btn-save cursor-default bg-blue-600 rounded-xl h-16 w-1/2 absolute inset-x-[100px] bottom-4 text-white font-bold text-xl"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
